@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fullscreen Logo</title>
+  <link rel="icon" href="https://png.pngtree.com/png-clipart/20230331/original/pngtree-letter-m-logo-png-image_9013542.png">
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    img{
+      transition: transform ease 1s;
+    }
+    img:hover{
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="h-screen w-screen overflow-hidden">
+  <div class="relative h-screen w-screen flex items-center justify-center">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+      <img src="https://wallpapercave.com/wp/wp1945909.jpg" 
+           alt="Background" 
+           class="w-full h-full object-cover opacity-50">
+    </div>
+
+      <!-- Logo -->
+    <a href="./home.html" class="relative z-20">
+      <img src="https://png.pngtree.com/png-clipart/20230331/original/pngtree-letter-m-logo-png-image_9013542.png" 
+           alt="M Logo" 
+           class="w-64 md:w-96 lg:w-[500px]">
+    </a>
+
+
+  </div>
+</body>
+</html>
